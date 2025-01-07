@@ -12,7 +12,7 @@ struct Node {
 
 class Polynomial {
 private:
-    Node* head; // Header node for circular linked list
+    Node* head;
 
     void clear() {
         if (!head) return;
