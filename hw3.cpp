@@ -212,9 +212,9 @@ public:
 
 int main() {
     Polynomial p1, p2;
-    cout << "Enter first polynomial (format: n coef1 exp1 coef2 exp2 ...): ";
+    cout << "第一個多項式(format: n coef1 exp1 coef2 exp2 ...): ";
     cin >> p1;
-    cout << "Enter second polynomial (format: n coef1 exp1 coef2 exp2 ...): ";
+    cout << "第二個多項式(format: n coef1 exp1 coef2 exp2 ...): ";
     cin >> p2;
 
     Polynomial sum = p1 + p2;
@@ -223,14 +223,14 @@ int main() {
 
     cout << "p1: " << p1 << endl;
     cout << "p2: " << p2 << endl;
-    cout << "Sum: " << sum << endl;
-    cout << "Difference: " << diff << endl;
-    cout << "Product: " << prod << endl;
+    cout << "和: " << sum << endl;
+    cout << "差: " << diff << endl;
+    cout << "積: " << prod << endl;
 
     float x;
     cout << "Enter a value for x to evaluate p1: ";
     cin >> x;
     cout << "p1(" << x << ") = " << p1.Evaluate(x) << endl;
-
+    cout << "p2(" << x << ") = " << p2.Evaluate(x) << endl;
     return 0;
 }
